@@ -80,7 +80,8 @@ font-weight: 700;
    justify-content: flex-end;
    width: 30px;
    height: 18px;
-   margin-left: 20px;
+   right: 0;
+  
 }
 
 .burger span {
@@ -120,7 +121,7 @@ font-weight: 700;
 .open {
    display: flex !important;
 }
-@media (max-width: 600px) {
+@media (max-width: 900px) {
    .burger {
       display: flex;
    }
@@ -144,4 +145,7 @@ font-weight: 700;
       flex-direction: column;
       row-gap: 30px;
    }
+}
+@media (max-width: 600px){
+   .social__nav {display: none;}
 }
