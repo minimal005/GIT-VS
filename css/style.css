@@ -460,12 +460,12 @@ display: inline-flex;
    margin-left: 30px;
 }
 @media (max-width:900px){
-   .about{  
+   .about__body{  
       padding: 100px 10px;
    }
 }
 @media (max-width: 550px){
-   .about{
+   .about__body{
       padding: 70px 10px;
    }
    .about__items {
@@ -609,21 +609,20 @@ display: inline-flex;
    position: relative;
 }
 .start__slider::after, .start__slider::before{
-content: '';
-display: inline-block;
-width: 27px;
-height: 19px;
-position: absolute;
-bottom: 50%;
+   content: '';
+   display: inline-block;
+   width: 27px;
+   height: 19px;
+   position: absolute;
+   bottom: 50%;
 }
 .start__slider::after{
-background-image: url('../img/slider/arrow-right.svg');
-right: -50px;
-
+   background-image: url('../img/slider/arrow-right.svg');
+   right: -50px;
 }
 .start__slider::before{
-background-image: url('../img/slider/arrow-left.svg');
-left: -50px;
+   background-image: url('../img/slider/arrow-left.svg');
+   left: -50px;
 }
 .slider-start__body {
    display: flex;
@@ -648,7 +647,6 @@ left: -50px;
 .right-block__img img, .main__img img {
    border-radius: 6px;
 }
-
 .slider-start__info {
    max-width: 60%;
 }
@@ -666,7 +664,6 @@ left: -50px;
    max-width: 360px;
    text-align: left;
 }
-
 .slider-start__text {
    color: #8D96BD;
    font-family: 'Roboto', sans-serif;
@@ -677,13 +674,11 @@ left: -50px;
    margin-bottom: 31px;
    text-align: left;
 }
-
 .slider-start__buttons {
    display: flex;
    gap: 25px;
    align-items: center;
 }
-
 .slider-start__link {
    color: #A6B6DA;
    font-weight: 700;
@@ -695,7 +690,6 @@ left: -50px;
    text-align: center;
    position: relative;
 }
-
 
 @media (max-width: 1200px){
    .slider-start__images{
@@ -712,7 +706,6 @@ left: -50px;
    }
    .slider-start__body {
       gap: 30px;
-   
    }
    .slider-start__text {
       margin-bottom: 20px;
@@ -720,7 +713,6 @@ left: -50px;
    .slider-start__buttons{
       flex-direction: column;
       row-gap: 10px;
-   
       align-items: start;
    }
    .start {
@@ -743,7 +735,6 @@ left: -50px;
    .start__slider{
       padding: 30px 35px;
    }
-  
    .slider-start__info {
       max-width: 100%;
    }
@@ -770,4 +761,109 @@ left: -50px;
       .slider__elipse{
          margin-top: 60px;
       }
+}
+/* ----------------------------------CUSTOM */
+.custom {
+   background: linear-gradient(180deg, #EAF0FF 0%, #F6F9FF 100%);
+   padding: 108px 0;
+}
+.custom__body {
+   max-width: 70%;
+   margin: 0px auto;
+   display: flex;
+   position: relative;
+}
+.custom__info {
+   flex-basis: 50%;
+}
+.custom__subtitle {
+   margin-top: 37px;
+   margin-bottom: 30px;
+}
+.custom__title {
+   font-weight: 500;
+   font-size: 36px;
+   line-height: 125%; /* 45/36 */
+   color: #3D4F9F;
+   margin-bottom: 10px;
+}
+.custom__text {
+   max-width: 323px;
+}
+.custom__blog {
+   flex-basis: 50%;
+}
+.blog-custom__card {
+   background: #FFFFFF;
+   border: 1px solid #D8E3FE;
+   box-shadow: 0px 5px 50px #F3F5FA;
+   padding: 40px 70px 50px;
+   line-height: 171.428571%; /* 24/14 */
+   letter-spacing: 0.03em;
+   font-family: 'Roboto', sans-serif;
+   color: #676F95;
+   position: relative;
+   margin-bottom: 75px;
+}
+
+.blog-custom__card img {
+   position: absolute;
+   bottom: 0;
+   left: 50%;
+   transform: translate(-50%, 50%); 
+}
+
+.blog-custom__elipses {
+   text-align: center;
+}
+.blog-custom__hidden{
+   position: absolute;
+   right: -600px;
+   opacity: 0.5;
+   max-width: 423px;
+}
+@media (max-width: 1264px){
+   .blog-custom__hidden{
+      max-width: 300px;
+      right: -480px;
+   }
+}
+@media (max-width: 1084px){
+   .blog-custom__hidden{
+      right: -420px;
+   }
+   .blog-custom__card{
+      padding: 40px;
+   }
+}
+@media (max-width: 984px){
+   .custom{
+      padding: 70px 0;
+   }
+   .custom__body {
+      column-gap: 10px;
+   }
+   .custom__subtitle {
+      margin-top: 0px;
+      margin-bottom: 15px;
+   }
+   .blog-custom__hidden{
+      display: none;
+   }
+   .custom__body {
+      max-width: 90%;
+   }
+   .blog-custom__card{
+      margin-bottom: 50px;
+   }
+}
+@media (max-width: 550px){
+   .custom__body{
+      flex-direction: column;
+      row-gap: 30px;
+   }
+   .custom__title{
+      margin-bottom: 15px;
+   }
+  
 }
