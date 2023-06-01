@@ -10,8 +10,8 @@
 </head>
 
 <body>
-   <header class="header">
-      <div class="container header__body">
+   <div class="container">
+      <header class="header">
          <div class="header__nav">
             <a href="#" class="header__logo"></a>
             <div class="header__body-burger">
@@ -34,25 +34,21 @@
                   <li><a href="#!"><img src="./img/header/icons/twitter.svg" alt="twitter"></a>
                   </li>
                   <li><a href="#!"><img src="./img/header/icons/M.svg" alt="M"></a></li>
-
                </ul>
             </nav>
-
             <a href="#!" class="header__btn">Get started</a>
             <div class="burger">
                <span></span>
             </div>
          </div>
-      </div>
+      </header>
 
-
-   </header>
-   <section class="home">
-      <div class="container">
+      <section class="home">
          <div class="home__bg">
             <div class="home__subtitle subtitle">PLAN YOUR LIFE</div>
             <h1 class="home__title">Increase your <strong>productivity</strong></h1>
-            <div class="home__text">Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu atqui laudem an,
+            <div class="home__text">Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu atqui laudem
+               an,
                insolens gubergren similique est cu. Et vel modus congue vituperata.</div>
             <a href="#!" class="home__play"> <span></span></a>
 
@@ -64,23 +60,49 @@
             <img src="./img/prod/logo/3.png" alt="image">
             <img src="./img/prod/logo/4.png" alt="image">
             <img src="./img/prod/logo/5.png" alt="image">
-
          </div>
+      </section>
 
-      </div>
+      <section class="plan">
+         <div class="plan__body body-plan">
+            <div class="body-plan__subtitle subtitle">DESKTOP AND MOBILE APP</div>
+            <div class="body-plan__title"><strong>Plan</strong> and <strong>manage</strong></div>
+            <div class="body-plan__text">Brute laoreet efficiendi id his, ea illum nonumes luptatum pro. Usu atqui
+               laudem an, insolens gubergren similique est cu. Et vel modus congue vituperata. Solum patrioque no sea.
+               Mea ex malis mollis oporteat. Eum an expetenda consequat.
+            </div>
+            <div class="body-plan__buttons">
+               <a href="#!" class="body-plan__btn body-plan__btn_blue">View video <img src="./img/plan/arrow_right.svg"
+                     alt="arrow_right"></a>
+               <a href="#!" class="body-plan__btn body-plan__btn_grey">See features</a>
+            </div>
+         </div>
+         <div class="plan__img">
+            <img src="./img/plan/illustration.png" alt="">
+         </div>
+      </section>
 
-   </section>
+
+
+      <section class="about">
+
+
+
+         <div class="about__buttons">
+            <a href="#!" class="main__btn about__btn about__btn-red">Read more</a>
+            <a href="#!" class="main__btn about__btn btn-blue">Get started</a>
+         </div>
+      </section>
 
 
 
 
-   <script>
-      document.querySelector('.burger').addEventListener('click', function () {
-         this.classList.toggle('active');
-         document.querySelector('.burger__nav').classList.toggle('open');
-
-      })
-   </script>
+      <script>
+         document.querySelector('.burger').addEventListener('click', function () {
+            this.classList.toggle('active');
+            document.querySelector('.burger__nav').classList.toggle('open');
+         })
+      </script>
 </body>
 
 </html>

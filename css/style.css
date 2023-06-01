@@ -16,6 +16,7 @@ html{
    font-family: 'Quicksand', sans-serif;
    font-weight: 400;
    font-size: 14px;
+   box-sizing: border-box;
 }
 .container {
    max-width: 1440px;
@@ -36,8 +37,24 @@ color: #3D4F9F;
 strong {
    font-weight: 500;
 }
+.main__btn {
+   display: inline-block;
+   padding: 13px 16px;
+   font-weight: 700;
+   font-size: 13px;
+   line-height: 123.076923%; /* 16/13 */
+   border-radius: 2px;
+}
+.about__btn-red{
+   color: #D43F3F;
+   background-color: #FFD7D7;
+}
+.btn-blue{
+   color: #3A79FF;
+   background: #D2E1FF;
+}
 /* --------------------------------------HEADER */
-.header__body {
+.header {
    display: flex;
    height: 80px;
    max-width: 1206px;
@@ -246,7 +263,7 @@ strong {
    row-gap: 20px;
    padding: 58px 10px;
 }
-.home__footer img: :hover{
+.home__footer img:hover{
    filter: invert(48%) sepia(45%) saturate(787%) hue-rotate(186deg) brightness(95%) contrast(90%);
 }
 @media (max-width: 600px){
@@ -261,8 +278,85 @@ strong {
       height: 600px;
    }
 }
-/* --------------------------------------HOME */
+/* --------------------------------------PLAN */
+.plan {
+   background-color: #F5F8FF;
+   padding: 208px 10px 216px;
+   position: relative;
+}
+.plan__body {
+   display: inline-block;
+   padding-left: 250px;
+   margin-right: -120px;
+}
+.body-plan__subtitle {
+   margin-bottom: 27px;
+   
+}
+.body-plan__title {
+   margin-bottom: 27px;
+   color: #3D4F9F;
+   font-size: 36px;
+   line-height: 45px;
+}
+.body-plan__text {
+   max-width: 413px;
+   margin-bottom: 47px;
+}
+.plan__img{
+   display: inline-block;
+   float: right;
+   margin-top: -130px;
+   max-width: 854px;
+   margin-right: -20px;
+}
+.plan__img img {
+   width: 100%;
+}
+.body-plan__buttons{
 
+display: inline-flex;
+}
+.body-plan__btn {
+   display: inline-block;
+   padding: 13px 25px;
+}
+.body-plan__btn_blue{
+   background: #4C85FF;
+   box-shadow: 0px 5px 15px rgba(188, 199, 255, 0.75);
+   color: white;
+   font-weight: 700;
+   font-size: 13px;
+   line-height: 123.076923%; /* 16/13 */
+   border-top-left-radius: 2px;
+   border-bottom-left-radius: 2px;
+}
+.body-plan__btn_grey{
+   background: #F5F8FF;
+   color: #ADB4D2;
+   border: 1px solid #D1D1E4;
+   border-top-right-radius: 2px;
+   border-bottom-right-radius: 2px;
+}
+@media (max-width: 1400px){
+   .plan__body{
+      padding-left: 100px;
+   }
+}
+
+
+
+
+
+
+
+
+
+/* --------------------------------------ABOUT */
+.about {
+   background: url('../img/about/clouds.png') center no-repeat;
+   padding: 171px 10px;
+}
 
 
 
