@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:300,regular,500,600,700&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,regular,500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic&display=swap');
 *{
    padding: 0;
    margin: 0;
@@ -400,7 +400,7 @@ display: inline-flex;
 .about__item {
    flex: 0 1 140px;
    max-width: 140px; 
-   font-family: sans-serif;
+   font-family: 'Open sans', sans-serif;
 }
 .item-about__img {
    width: 69px;
@@ -420,18 +420,18 @@ display: inline-flex;
    margin-bottom: 25px;
 }
 .item-about__text {
-  
    font-weight: 600;
    font-size: 11px;
    line-height: 172.727273%; /* 19/11 */
    color: #ADB3CB;
-   margin-bottom: 95px;
+   
 }
 
 .about__buttons {
+   margin-top: 95px;
    display: flex;
    justify-content: center;
-   column-gap: 47px;
+   column-gap: 40px;
    align-items: center;
 
 }
@@ -440,5 +440,63 @@ display: inline-flex;
    font-weight: 600;
    font-size: 11px;
    line-height: 172.727273%; /* 19/11 */
-   font-family: sans-serif;
+   font-family: 'Open sans', sans-serif;
+   color: #ADB3CB;
+}
+.about__or::before, .about__or::after{
+   content: '';
+   width: 15px;
+   height: 2px;
+   background-color: #DAE4FE;
+   display: inline-block;
+   margin-bottom: 2px;
+}
+.about__or::before{
+   margin-right: 30px;
+}
+.about__or::after{
+   margin-left: 30px;
+}
+@media (max-width:900px){
+.about{
+   padding: 100px 10px;
+}
+}
+@media (max-width: 550px){
+   .about{
+      padding: 70px 10px;
+   }
+   .about__items {
+      flex-wrap: wrap;
+      row-gap: 30px;
+   }  
+   .about__item {
+      flex: 0 1 48%;
+      max-width: 48%; 
+      
+   }
+   .about__title{
+      margin-bottom: 50px;
+   }
+   .item-about__img{
+      margin-bottom: 20px;
+   }
+   .item-about__title{
+      margin-bottom: 20px;
+   }
+   .about__or::before{
+      display: none;
+   }
+   .about__or::after{
+      display: none;
+   }
+   .about__buttons{
+      column-gap: 20px;
+   }
+   .about__buttons {
+      margin-top: 60px;
+     
+   
+   }
+   
 }
