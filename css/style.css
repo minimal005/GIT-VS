@@ -191,7 +191,6 @@ strong {
 
 .home__subtitle {
    margin-bottom:16px;
-   
 }
 .home__title {
    font-weight: 300;
@@ -201,7 +200,6 @@ strong {
    margin-bottom: 28px;
    text-align: center;
 }
-
 .home__text {
    font-family: 'Roboto', sans-serif;
    font-size: 15px;
@@ -221,7 +219,6 @@ strong {
    left: 30.5%;
    top: 400px;
 }
-
 .home__play{
    width: 52px;
    height: 52px;
@@ -239,6 +236,19 @@ strong {
    clip-path: polygon(45% 23%, 45% 63%, 77% 43%);
    background-color: #5E81FF;
 }
+.home__footer{
+   
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   column-gap: 76px;
+   row-gap: 20px;
+   padding: 58px 10px;
+}
+.home__footer img: :hover{
+   filter: invert(48%) sepia(45%) saturate(787%) hue-rotate(186deg) brightness(95%) contrast(90%);
+}
 @media (max-width: 600px){
    .home__bg::before{
       display: none;
@@ -251,7 +261,7 @@ strong {
       height: 600px;
    }
 }
-
+/* --------------------------------------HOME */
 
 
 
