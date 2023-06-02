@@ -65,27 +65,31 @@ strong {
    align-items: center;
    padding: 0 10px;
 }
-.header__nav{
+.header__nav, .footer__nav{
    display: flex;
    gap: 73px;
+   align-items: center;
 }
-.header__logo {
+.header__logo, .footer__logo {
    width: 26px;
    height: 26px;
    border-radius: 50%;
    background-color: #5E81FE;
 }
-.header__items {
+.header__items, .footer__items {
     display: flex;
    gap: 42px;
    font-size: 12px;
    font-weight: 500;
 }
-.header__item:hover {
+.header__item:hover, .footer__item:hover{
    color: #5E81FE !important;
    /* font-weight: 700; */
 }
-.social__items {
+.social__items-img:hover, .social__items-img:hover {
+   filter: invert(49%) sepia(18%) saturate(2231%) hue-rotate(192deg) brightness(102%) contrast(102%);
+}
+.social__items, .footer__items {
    display: flex;
    gap: 34px;
 }
@@ -93,12 +97,12 @@ strong {
    display: flex;
    align-items: center;
 }
-.header__body-social {
+.header__body-social, .footer__body-social{
    display: flex;
    gap: 44px;
    align-items: center;
 }
-.header__btn {
+.header__btn, .footer__btn {
    padding: 13px 16px;
    background-color: #D2E1FF;
    border-radius: 2px;
@@ -178,9 +182,7 @@ strong {
    .header__body-social {gap: 30px;}
 }
 /* --------------------------------------HOME */
-.home{
-   
-}
+
 .home__bg {
    display: flex;
    flex-direction: column;
@@ -1099,4 +1101,58 @@ strong {
       margin-bottom: 30px;
    }
 }
-
+/* ----------------------------------FOOTER */
+.footer {
+   padding: 100px 0;
+}
+.footer__body {
+   display: flex;
+   max-width: 1206px;
+   margin: 0px auto;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 10px;
+}
+.footer__copyright {
+   font-weight: 500;
+   font-size: 12px;
+   line-height: 125%; /* 15/12 */
+   letter-spacing: 0.05em;
+   text-transform: capitalize;
+   color: #AEB8D0;
+}
+.footer__copyright{
+   max-width: 1206px;
+   padding: 0 10px;
+   margin: 0px auto;
+   margin-left: 12%;
+}
+.footer__items {
+   display: flex;
+   gap: 34px;
+}
+@media (max-width: 880px){
+   .footer{
+      padding-top: 0;
+   }
+   .footer__body {
+      justify-content: start;
+      gap: 70px;
+   }
+   .footer__items{
+      flex-direction: column;
+      row-gap: 10px  ;
+   }
+   .footer__copyright {
+      margin-top: 20px;
+      text-align: center;
+   }
+}
+@media (max-width: 600px){
+   .footer__nav {
+      gap: 30px;
+   }
+   .footer__btn{
+      display: none;
+   }
+}
