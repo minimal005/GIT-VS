@@ -753,7 +753,6 @@ display: inline-flex;
    }
    .start__slider::after{
       right: 0px;
-      
       }
       .start__slider::before{
       left: 0px;
@@ -766,6 +765,7 @@ display: inline-flex;
 .custom {
    background: linear-gradient(180deg, #EAF0FF 0%, #F6F9FF 100%);
    padding: 108px 0;
+   overflow: hidden;
 }
 .custom__body {
    max-width: 70%;
@@ -805,14 +805,12 @@ display: inline-flex;
    position: relative;
    margin-bottom: 75px;
 }
-
 .blog-custom__card img {
    position: absolute;
    bottom: 0;
    left: 50%;
    transform: translate(-50%, 50%); 
 }
-
 .blog-custom__elipses {
    text-align: center;
 }
@@ -865,5 +863,103 @@ display: inline-flex;
    .custom__title{
       margin-bottom: 15px;
    }
-  
 }
+/* ----------------------------------FREQUEN */
+.frequen {
+   padding: 175px 0;
+   max-width: 743px;
+   margin: 0px auto;
+   
+}
+.frequen__subtitle {
+   margin-bottom: 20px;
+   text-align: center;
+}
+.frequen__title {
+   font-weight: 500;
+   font-size: 24px;
+   line-height: 125%; /* 30/24 */
+   color: #3D4F9F;
+   margin-bottom: 55px;
+   text-align: center;
+}
+.frequen__list li{
+   border-bottom: 1px solid #D8E3FE;
+   
+}
+.frequen__li_title {
+   font-weight: 500;
+   font-size: 15px;
+   line-height: 126.666667%; /* 19/15 */
+   letter-spacing: 0.03em;
+   color: #8E96B7;
+   margin: 20px 0;
+   margin-left: 20px;
+}
+.frequen__li_title::before{
+   content: '';
+   width: 18px;
+   height: 11px;
+   display: inline-block;
+   margin-right: 24px;
+   background-image: url('../img/frequen/arrow-down.svg');
+}
+.frequen__li_info {
+   margin-left: 80px;
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 50px;
+   align-items: center;
+}
+.frequen__li_text {
+   font-family: 'Roboto', sans-serif;
+   line-height: 192.857143%; /* 27/14 */
+   letter-spacing: 0.03em;
+   color: #8D96BD;
+   max-width: 391px;
+   margin-top: 16px;
+   
+}
+.frequen__li_btn {
+   padding: 13px 15px;
+   background-color: #E8ECF4;
+   border-radius: 2px;
+   color: #7382A3;
+   margin-right: 15px;
+}
+.frequen__li_title-active{
+   font-weight: 700;
+   font-size: 15px;
+   line-height: 126.666667%; /* 19/15 */
+   letter-spacing: 0.03em;
+   font-weight: 500;
+   line-height: 123.076923%; /* 16/13 */
+   color: #495274;
+   margin: 20px 0;
+margin-left: 20px;
+} 
+.frequen__li_title-active::before{
+   content: '';
+   width: 18px;
+   height: 11px;
+   display: inline-block;
+   margin-right: 24px;
+   background-image: url('../img/frequen/arrow-up.svg');
+}
+.frequen-active{
+   display: none;
+}
+.frequen-none{
+   display: none;
+}
+.frequen-open{
+   display: block;
+}
+.frequen__li:hover .frequen__li_title{
+   display: none;
+}
+.frequen__li:hover .frequen-active{
+   display: block;
+}
+
+
