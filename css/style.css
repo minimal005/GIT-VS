@@ -869,7 +869,6 @@ display: inline-flex;
    padding: 175px 0;
    max-width: 743px;
    margin: 0px auto;
-   
 }
 .frequen__subtitle {
    margin-bottom: 20px;
@@ -885,7 +884,6 @@ display: inline-flex;
 }
 .frequen__list li{
    border-bottom: 1px solid #D8E3FE;
-   
 }
 .frequen__li_title {
    font-weight: 500;
@@ -918,7 +916,6 @@ display: inline-flex;
    color: #8D96BD;
    max-width: 391px;
    margin-top: 16px;
-   
 }
 .frequen__li_btn {
    padding: 13px 15px;
@@ -936,7 +933,7 @@ display: inline-flex;
    line-height: 123.076923%; /* 16/13 */
    color: #495274;
    margin: 20px 0;
-margin-left: 20px;
+   margin-left: 20px;
 } 
 .frequen__li_title-active::before{
    content: '';
@@ -961,5 +958,30 @@ margin-left: 20px;
 .frequen__li:hover .frequen-active{
    display: block;
 }
-
+@media (max-width: 700px){
+   .frequen__li_info{
+      flex-direction: column;
+   }
+   .frequen__li_text{
+      flex-basis: 100%;
+      max-width: 100%;
+      margin-bottom: 30px;
+   }
+   .frequen__li_btn{
+      margin-left: 10px;
+   }
+}
+@media (max-width: 450px){
+   .frequen__li_title-active{
+      margin: 15px 0;
+   }
+   .frequen__li_text{
+      margin-top: 0;
+   }
+   .frequen__li_info{
+      margin-bottom: 20px;
+      margin-left: 40px;
+   }
+}
+/* ----------------------------------FREQUEN */
 
