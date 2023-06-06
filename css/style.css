@@ -1141,6 +1141,7 @@ strong {
 }
 .white-form__btn{
    border-color: transparent;
+   cursor: pointer;
 }
 .white-started__form input {
    width: 279px;
