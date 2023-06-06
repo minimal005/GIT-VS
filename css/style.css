@@ -1317,4 +1317,11 @@ strong {
    .modal-content{
       width: 90%;
    }
+   .footer__body{
+     padding: 20px 0; 
+   }
+   .footer__items-social {
+      justify-content: center;
+      align-items: center;
+   }
 }
